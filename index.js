@@ -1,11 +1,32 @@
-// add solution here
-var musicians=Array;
-musicians.push("John Lennon","Paul McCartney","George Harrison","Ringo Starr");
-var instruments=Array;
-instruments.push(" plays guitar"," sings"," plays bass"," plays drums")
-var empty=Array;
-function theBeatlesPlay(musicians,instruments) {
-  var arrayCount = musicians.list;
-  for(arrayCount){
-  empty.push(musicians[arrayCount] + instruments[arrayCount])
+function theBeatlesPlay(musicians, instruments) {
+  const arr = []
+
+  for (let i = 0, l = musicians.length; i < l; i++) {
+    arr.push(`${musicians[i]} plays ${instruments[i]}`)
+  }
+
+  return arr
+}
+
+function johnLennonFacts(facts) {
+  const shoutedFacts = []
+
+  let i = 0
+  while (i < facts.length) {
+    shoutedFacts.push(`${facts[i]}!!!`)
+    i++
+  }
+
+  return shoutedFacts
+}
+
+function iLoveTheBeatles(n) {
+  const arr = []
+
+  do {
+    arr.push('I love the Beatles!')
+    n++
+  } while (n < 15)
+
+  return arr
 }
